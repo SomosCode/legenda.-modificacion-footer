@@ -1,0 +1,146 @@
+/******************* INICIO FOOTER**************************/
+/* Footer Styles */
+.footer {
+    background: #333; /* Color de fondo oscuro para el pie de página */
+    color: #fff; /* Color de texto blanco */
+    padding-top: 40px; /* Espacio superior del pie de página */
+    padding-bottom: 20px; /* Espacio inferior del pie de página */
+    font-family: 'Arial', sans-serif; /* Fuente utilizada en el pie de página */
+    text-align: center; /* Centra el texto en todo el pie de página */
+}
+
+.footer .footer-top {
+    padding-bottom: 20px; /* Espacio inferior en la parte superior del pie de página */
+    border-bottom: 1px solid #444; /* Línea delgada de color gris oscuro en la parte inferior */
+}
+
+.footer .container {
+    display: flex; /* Utiliza Flexbox para el diseño del contenedor */
+    flex-wrap: wrap; /* Permite que los elementos envuelvan a la siguiente línea si es necesario */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.footer .row {
+    display: flex; /* Utiliza Flexbox para las filas dentro del pie de página */
+    flex-wrap: wrap; /* Permite que los elementos en la fila envuelvan si es necesario */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.footer .footer-col {
+    width: 25%; /* Cada columna ocupa el 25% del ancho disponible */
+    padding: 0 15px; /* Espacio horizontal dentro de cada columna */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    margin-bottom: 20px; /* Espacio inferior entre las columnas */
+    text-align: left; /* Alinea el texto a la izquierda dentro de la columna */
+}
+
+.footer .footer-col h4 {
+    font-size: 18px; /* Tamaño de fuente del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    text-transform: capitalize; /* Capitaliza la primera letra de cada palabra */
+    margin-bottom: 15px; /* Espacio inferior debajo del encabezado */
+    font-weight: 500; /* Peso de fuente medio */
+    position: relative; /* Necesario para el posicionamiento absoluto del pseudoelemento */
+    display: inline-block; /* Permite que la línea decorativa se alinee correctamente */
+}
+
+.footer .footer-col h4::before {
+    content: ''; /* Crea un pseudoelemento antes del contenido del encabezado */
+    position: absolute; /* Posicionamiento absoluto relativo al encabezado */
+    left: 0; /* Alinea el pseudoelemento a la izquierda del encabezado */
+    bottom: -5px; /* Coloca el pseudoelemento 5px debajo del encabezado para alinearlo correctamente */
+    background-color: #e91e63; /* Color de fondo del pseudoelemento */
+    height: 2px; /* Altura del pseudoelemento */
+    width: 50px; /* Ancho del pseudoelemento */
+}
+
+.footer .footer-col ul {
+    list-style: none; /* Elimina los estilos predeterminados de lista */
+    padding: 0; /* Elimina el relleno interno de la lista */
+    margin: 0; /* Elimina el margen de la lista */
+}
+
+.footer .footer-col ul li {
+    margin-bottom: 10px; /* Espacio inferior entre los elementos de la lista */
+}
+
+.footer .footer-col ul li a {
+    font-size: 16px; /* Tamaño de fuente de los enlaces */
+    text-transform: capitalize; /* Capitaliza la primera letra de cada palabra en los enlaces */
+    color: #bbbbbb; /* Color de texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-weight: 300; /* Peso de fuente ligero */
+}
+
+.footer .footer-col ul li a:hover {
+    color: #fff; /* Color del texto al pasar el cursor sobre el enlace */
+    padding-left: 10px; /* Añade un relleno a la izquierda del enlace en hover */
+    transition: all 0.3s ease; /* Transición suave para todos los cambios de estado */
+}
+
+.footer .social-links {
+    margin-top: 20px; /* Espacio superior para los iconos sociales */
+}
+
+.footer .social-links a {
+    display: inline-block; /* Permite que los enlaces se alineen horizontalmente */
+    height: 40px; /* Altura de los iconos sociales */
+    width: 40px; /* Ancho de los iconos sociales */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente para los iconos sociales */
+    margin: 0 10px; /* Espaciado alrededor de los iconos sociales */
+    text-align: center; /* Centra el contenido dentro del icono */
+    line-height: 40px; /* Altura de línea igual a la altura del icono para centrar el texto */
+    border-radius: 50%; /* Hace que el fondo del icono sea circular */
+    color: #fff; /* Color del icono */
+    transition: all 0.5s ease; /* Transición suave para todos los cambios de estado */
+}
+
+.footer .social-links a:hover {
+    color: #24262b; /* Color del icono al pasar el cursor sobre él */
+    background-color: #fff; /* Color de fondo del icono al pasar el cursor sobre él */
+}
+
+.footer .footer-bottom {
+    padding-top: 20px; /* Espacio superior en la parte inferior del pie de página */
+    border-top: 1px solid #444; /* Línea delgada de color gris oscuro en la parte superior */
+}
+
+.footer .footer-bottom .container {
+    display: flex; /* Utiliza Flexbox para el diseño del contenedor */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    flex-direction: column; /* Organiza los elementos en una columna */
+}
+
+.footer .footer-bottom .newsletter-form {
+    display: flex; /* Utiliza Flexbox para el formulario de suscripción */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    margin-top: 10px; /* Espacio superior para el formulario */
+}
+
+.footer .footer-bottom .newsletter-form input {
+    width: 70%; /* Ancho del campo de entrada para el correo electrónico */
+    padding: 10px; /* Relleno interno del campo de entrada */
+    border: none; /* Elimina el borde del campo de entrada */
+    border-radius: 5px; /* Bordes redondeados para el campo de entrada */
+    margin-right: 10px; /* Espacio a la derecha del campo de entrada */
+}
+
+.footer .footer-bottom .newsletter-form button {
+    padding: 10px 20px; /* Relleno interno del botón */
+    border: none; /* Elimina el borde del botón */
+    background-color: #e91e63; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+}
+
+.footer .footer-bottom .newsletter-form button:hover {
+    background-color: #333; /* Color de fondo del botón al pasar el cursor sobre él */
+    color: #e91e63; /* Color del texto del botón al pasar el cursor sobre él */
+    transition: all 0.3s ease; /* Transición suave para todos los cambios de estado */
+}
+
+
+
